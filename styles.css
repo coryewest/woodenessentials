@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.logo {
+  width: 50rem;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-list li {
+  margin-left: 1.6rem;
+}
+
+.main-nav-list a {
+  text-decoration: none;
+  color: #72a90b;
+  font-size: 3rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #666;
+}
+
+.nav-item.active {
+  color: #fff;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+
+.gallery {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: #72a90b;
+  border-radius: 0.5rem;
+}
+
+/* .gallery-container {
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+} */
+
+.gallery-item {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  /* border: 1px solid #333; */
+  /* border-radius: 0.5rem; */
+  /* background-color: #72a90b; */
+  /* width: fit-content;
+  height: fit-content; */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .img {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+} */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  width: 300px;
+  height: 400px;
+  background-color: #72a90b;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+footer {
+  background-color: #333;
+  color: #72a90b;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
