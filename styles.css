@@ -68,7 +68,7 @@ a {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 4.8rem;
 }
 
 h2 {
@@ -107,7 +107,7 @@ p {
 .main-nav-list a {
   text-decoration: none;
   color: #72a90b;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .nav-item {
@@ -120,12 +120,12 @@ p {
   color: #666;
 }
 
-.nav-item.active {
+/* .nav-item.active {
   color: #fff;
   background-color: #333;
   padding: 1rem;
   border-radius: 5rem;
-}
+} */
 
 .gallery {
   margin-top: 2rem;
