@@ -80,10 +80,9 @@ p {
 }
 
 .logo {
-  width: 50rem;
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  width: 48rem;
   height: auto;
 }
 
@@ -111,12 +110,32 @@ p {
 
 .nav-item {
   text-decoration: none;
-  color: #333;
   transition: color 0.2s ease;
 }
 
 .nav-item:hover {
   color: #666;
+}
+
+.social-icons ion-icon {
+  font-size: 3.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icons ion-icon:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link:link,
+.social-link:visited {
+  color: #72a90b;
+  margin: 0 1rem;
 }
 
 .gallery {
@@ -125,6 +144,7 @@ p {
   background-color: #333;
   color: #72a90b;
   border-radius: 0.5rem;
+  max-width: max-content;
 }
 
 .gallery-item {
@@ -178,10 +198,20 @@ p {
   transform: rotateY(180deg);
 }
 
+.social-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  color: #72a90b;
+}
+
 footer {
   background-color: #333;
   color: #72a90b;
   padding: 1rem;
   text-align: center;
+  margin: auto;
   margin-top: 2rem;
+  border-radius: 0.5rem;
 }
